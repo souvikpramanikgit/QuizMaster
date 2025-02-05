@@ -1,0 +1,822 @@
+export const QUIZ_DATA = {
+    javascript: {
+      name: 'JavaScript',
+      icon: '⚡', // Adding icons for visual appeal
+      quizzes: [
+        {
+          title: 'JavaScript Fundamentals',
+          questions: [
+            {
+              question: 'What is the result of 2 + "2"?',
+              options: ['4', '22', 'NaN', 'TypeError'],
+              correctAnswer: '22'
+            },
+            {
+              question: 'Which keyword is used to declare variables in JavaScript?',
+              options: ['var', 'let', 'const', 'All of the above'],
+              correctAnswer: 'All of the above'
+            },
+            // Add 8 more questions here...
+            {
+              question: 'What is the typeof operator result for null?',
+              options: ['null', 'undefined', 'object', 'number'],
+              correctAnswer: 'object'
+            },
+            {
+              question: 'Which method removes the last element from an array?',
+              options: ['pop()', 'push()', 'shift()', 'unshift()'],
+              correctAnswer: 'pop()'
+            },
+            {
+              question: 'What is a closure in JavaScript?',
+              options: [
+                'A function with access to outer scope variables',
+                'A way to close browser window',
+                'A method to end loops',
+                'A type of error'
+              ],
+              correctAnswer: 'A function with access to outer scope variables'
+            },
+            {
+              question: 'What does JSON stand for?',
+              options: [
+                'JavaScript Object Notation',
+                'JavaScript Oriented Notation',
+                'JavaScript Online Notation',
+                'Java Serialized Object Notation'
+              ],
+              correctAnswer: 'JavaScript Object Notation'
+            },
+            {
+              question: 'Which operator is used for strict equality comparison?',
+              options: ['==', '===', '=', '!='],
+              correctAnswer: '==='
+            },
+            {
+              question: 'What is the purpose of the "use strict" directive?',
+              options: [
+                'Enforces stricter parsing of JavaScript',
+                'Makes code run faster',
+                'Allows more flexible syntax',
+                'Prevents code execution'
+              ],
+              correctAnswer: 'Enforces stricter parsing of JavaScript'
+            },
+            {
+              question: 'What is event bubbling?',
+              options: [
+                'Event propagation from child to parent elements',
+                'Creating multiple events',
+                'Removing event listeners',
+                'Adding event listeners'
+              ],
+              correctAnswer: 'Event propagation from child to parent elements'
+            },
+            {
+              question: 'Which method is used to add elements to the end of an array?',
+              options: ['push()', 'pop()', 'shift()', 'unshift()'],
+              correctAnswer: 'push()'
+            }
+          ]
+        },
+        {
+          title: 'JavaScript Intermediate',
+          questions: [
+            {
+              question: 'What is the output of: console.log(typeof (() => {}))?',
+              options: ['object', 'function', 'undefined', 'arrow'],
+              correctAnswer: 'function'
+            },
+            {
+              question: 'Which of these is a correct way to deep clone an object in JavaScript?',
+              options: [
+                'Object.assign({}, obj)',
+                'JSON.parse(JSON.stringify(obj))',
+                '{...obj}',
+                'obj.clone()'
+              ],
+              correctAnswer: 'JSON.parse(JSON.stringify(obj))'
+            },
+            {
+              question: 'What is the result of: [1, 2, 3].map(num => num * 2).filter(num => num > 4)?',
+              options: [
+                '[4, 6]',
+                '[6]',
+                '[2, 4, 6]',
+                '[4]'
+              ],
+              correctAnswer: '[6]'
+            },
+            {
+              question: 'What is the output of: console.log(0.1 + 0.2 === 0.3)?',
+              options: [
+                'true',
+                'false',
+                'undefined',
+                'TypeError'
+              ],
+              correctAnswer: 'false'
+            },
+            {
+              question: 'What is event delegation in JavaScript?',
+              options: [
+                'Adding multiple event listeners to one element',
+                'Handling events on parent elements that bubble up from children',
+                'Removing event listeners automatically',
+                'Creating custom events'
+              ],
+              correctAnswer: 'Handling events on parent elements that bubble up from children'
+            },
+            {
+              question: 'What is the output of: Promise.resolve(1).then(x => x + 1).then(x => Promise.reject(x))?',
+              options: [
+                'Promise {<resolved>: 2}',
+                'Promise {<rejected>: 2}',
+                'Promise {<pending>}',
+                'Promise {<rejected>: 1}'
+              ],
+              correctAnswer: 'Promise {<rejected>: 2}'
+            },
+            {
+              question: 'What is a generator function in JavaScript?',
+              options: [
+                'A function that generates random numbers',
+                'A function that can be paused and resumed using yield',
+                'A function that creates other functions',
+                'A function that runs automatically'
+              ],
+              correctAnswer: 'A function that can be paused and resumed using yield'
+            },
+            {
+              question: 'What is the purpose of the WeakMap object?',
+              options: [
+                'To store key-value pairs where keys are weakly referenced',
+                'To create a map with weak security',
+                'To store only primitive values',
+                'To create a read-only map'
+              ],
+              correctAnswer: 'To store key-value pairs where keys are weakly referenced'
+            },
+            {
+              question: 'What is the difference between microtasks and macrotasks in JavaScript?',
+              options: [
+                'Microtasks are faster than macrotasks',
+                'Microtasks have higher priority and execute before macrotasks',
+                'Macrotasks are more important than microtasks',
+                'There is no difference'
+              ],
+              correctAnswer: 'Microtasks have higher priority and execute before macrotasks'
+            },
+            {
+              question: 'What is the output of: console.log([...new Set([1,2,2,3,1,4])])?',
+              options: [
+                '[1, 2, 2, 3, 1, 4]',
+                '[1, 2, 3, 4]',
+                'TypeError',
+                '[4, 3, 2, 1]'
+              ],
+              correctAnswer: '[1, 2, 3, 4]'
+            }
+          ]
+        },
+        {
+          title: 'JavaScript Advanced',
+          questions: [
+            {
+              question: 'What is the difference between Object.create(null) and {}?',
+              options: [
+                'No difference, they are the same',
+                'Object.create(null) creates an object with no prototype chain',
+                'Object.create(null) is faster',
+                'Object.create(null) creates a frozen object'
+              ],
+              correctAnswer: 'Object.create(null) creates an object with no prototype chain'
+            },
+            {
+              question: 'What is the output of: (function(){return typeof arguments;})();',
+              options: ['array', 'object', 'arguments', 'undefined'],
+              correctAnswer: 'object'
+            },
+            {
+              question: 'What is a Symbol in JavaScript?',
+              options: [
+                'A primitive type for unique identifiers',
+                'A type of function',
+                'A special kind of object',
+                'A mathematical symbol'
+              ],
+              correctAnswer: 'A primitive type for unique identifiers'
+            },
+            {
+              question: 'What is the purpose of the Proxy object?',
+              options: [
+                'To hide IP addresses',
+                'To create custom behavior for basic operations',
+                'To speed up object access',
+                'To encrypt data'
+              ],
+              correctAnswer: 'To create custom behavior for basic operations'
+            },
+            {
+              question: 'What is the output of: console.log(1 < 2 < 3); console.log(3 > 2 > 1);',
+              options: [
+                'true, true',
+                'true, false',
+                'false, true',
+                'false, false'
+              ],
+              correctAnswer: 'true, false'
+            },
+            {
+              question: 'What is the purpose of the Reflect API?',
+              options: [
+                'To create mirrors',
+                'To provide methods for interceptable JavaScript operations',
+                'To reflect light in 3D games',
+                'To reverse strings'
+              ],
+              correctAnswer: 'To provide methods for interceptable JavaScript operations'
+            },
+            {
+              question: 'What is tail call optimization?',
+              options: [
+                'A way to optimize the last line of code',
+                'A compiler optimization for recursive function calls in the tail position',
+                'A way to reduce function length',
+                'A method to optimize return statements'
+              ],
+              correctAnswer: 'A compiler optimization for recursive function calls in the tail position'
+            },
+            {
+              question: 'What is the purpose of the globalThis property?',
+              options: [
+                'To access the global object consistently across different JavaScript environments',
+                'To store global variables',
+                'To create global functions',
+                'To manage global state'
+              ],
+              correctAnswer: 'To access the global object consistently across different JavaScript environments'
+            },
+            {
+              question: 'What is the difference between Observable and Promise?',
+              options: [
+                'Observables can emit multiple values over time, Promises resolve once',
+                'Observables are synchronous, Promises are asynchronous',
+                'Observables are deprecated, Promises are modern',
+                'There is no difference'
+              ],
+              correctAnswer: 'Observables can emit multiple values over time, Promises resolve once'
+            },
+            {
+              question: 'What is the purpose of the private class fields (#) syntax?',
+              options: [
+                'To make variables look cool',
+                'To create truly private class members',
+                'To indicate important properties',
+                'To improve performance'
+              ],
+              correctAnswer: 'To create truly private class members'
+            }
+          ]
+        }
+      ]
+    },
+    react: {
+      name: 'React',
+      quizzes: [
+        {
+          title: 'React Fundamentals',
+          questions: [
+            {
+              question: 'What is JSX?',
+              options: [
+                'JavaScript XML',
+                'Java Syntax Extension',
+                'JavaScript Extension',
+                'Java XML'
+              ],
+              correctAnswer: 'JavaScript XML'
+            },
+            {
+              question: 'Which hook is used for side effects in React?',
+              options: ['useState', 'useEffect', 'useContext', 'useReducer'],
+              correctAnswer: 'useEffect'
+            },
+            {
+              question: 'What is the purpose of keys in React lists?',
+              options: [
+                'To style list items',
+                'To help React identify which items have changed',
+                'To make lists faster',
+                'To count items'
+              ],
+              correctAnswer: 'To help React identify which items have changed'
+            },
+            {
+              question: 'What is the virtual DOM?',
+              options: [
+                'A complete copy of the real DOM',
+                'A lightweight copy of the real DOM used for performance optimization',
+                'A virtual reality interface',
+                'A DOM database'
+              ],
+              correctAnswer: 'A lightweight copy of the real DOM used for performance optimization'
+            },
+            {
+              question: 'What is the purpose of React.memo()?',
+              options: [
+                'To memorize React concepts',
+                'To prevent unnecessary re-renders of functional components',
+                'To save data in memory',
+                'To create memos'
+              ],
+              correctAnswer: 'To prevent unnecessary re-renders of functional components'
+            },
+            {
+              question: 'What is prop drilling?',
+              options: [
+                'A way to create holes in components',
+                'Passing props through multiple levels of components',
+                'A debugging technique',
+                'A performance optimization'
+              ],
+              correctAnswer: 'Passing props through multiple levels of components'
+            },
+            {
+              question: 'What is the purpose of useCallback?',
+              options: [
+                'To memoize functions',
+                'To call functions',
+                'To create callbacks',
+                'To handle errors'
+              ],
+              correctAnswer: 'To memoize functions'
+            },
+            {
+              question: 'What is the difference between controlled and uncontrolled components?',
+              options: [
+                'Controlled components are better',
+                'Controlled components have their state managed by React',
+                'Uncontrolled components are deprecated',
+                'There is no difference'
+              ],
+              correctAnswer: 'Controlled components have their state managed by React'
+            },
+            {
+              question: 'What is the purpose of React.Fragment?',
+              options: [
+                'To fragment components',
+                'To group elements without adding extra nodes to the DOM',
+                'To split code',
+                'To improve performance'
+              ],
+              correctAnswer: 'To group elements without adding extra nodes to the DOM'
+            },
+            {
+              question: 'What is the purpose of useRef?',
+              options: [
+                'To create references to DOM elements',
+                'To reference documentation',
+                'To create refs only',
+                'To improve memory usage'
+              ],
+              correctAnswer: 'To create references to DOM elements'
+            }
+          ]
+        }
+      ]
+    },
+    python: {
+      name: 'Python',
+      quizzes: [
+        {
+          title: 'Python Basics',
+          questions: [
+            {
+              question: 'What is the correct file extension for Python files?',
+              options: ['.py', '.pt', '.pyt', '.python'],
+              correctAnswer: '.py'
+            },
+            {
+              question: 'Which of these is not a Python data type?',
+              options: ['int', 'float', 'varchar', 'bool'],
+              correctAnswer: 'varchar'
+            },
+            {
+              question: 'What is the purpose of the __init__ method?',
+              options: [
+                'To initialize a class',
+                'To create a loop',
+                'To import modules',
+                'To define variables'
+              ],
+              correctAnswer: 'To initialize a class'
+            },
+            {
+              question: 'What is a list comprehension?',
+              options: [
+                'A way to understand lists',
+                'A concise way to create lists',
+                'A list of comprehensions',
+                'A type of loop'
+              ],
+              correctAnswer: 'A concise way to create lists'
+            },
+            {
+              question: 'What is the difference between tuples and lists?',
+              options: [
+                'Tuples are faster',
+                'Lists are immutable, tuples are mutable',
+                'Tuples are immutable, lists are mutable',
+                'There is no difference'
+              ],
+              correctAnswer: 'Tuples are immutable, lists are mutable'
+            },
+            {
+              question: 'What is the purpose of the self parameter?',
+              options: [
+                'To reference the current instance of the class',
+                'To create selfies',
+                'To define self-contained code',
+                'To improve performance'
+              ],
+              correctAnswer: 'To reference the current instance of the class'
+            },
+            {
+              question: 'What is the purpose of the with statement?',
+              options: [
+                'To handle exceptions',
+                'To ensure proper handling of resources',
+                'To create loops',
+                'To define functions'
+              ],
+              correctAnswer: 'To ensure proper handling of resources'
+            },
+            {
+              question: 'What is a decorator in Python?',
+              options: [
+                'A design pattern',
+                'A way to modify function behavior',
+                'A type of loop',
+                'A class attribute'
+              ],
+              correctAnswer: 'A way to modify function behavior'
+            },
+            {
+              question: 'What is the purpose of the yield keyword?',
+              options: [
+                'To pause execution',
+                'To create generators',
+                'To return values',
+                'To handle errors'
+              ],
+              correctAnswer: 'To create generators'
+            },
+            {
+              question: 'What is the difference between == and is?',
+              options: [
+                'No difference',
+                '== compares values, is compares identity',
+                'is compares values, == compares identity',
+                'They are the same'
+              ],
+              correctAnswer: '== compares values, is compares identity'
+            }
+          ]
+        }
+      ]
+    },
+    c: {
+      name: 'C Programming',
+      icon: '🔧',
+      quizzes: [
+        {
+          title: 'C Fundamentals',
+          questions: [
+            {
+              question: 'What is the purpose of the sizeof operator in C?',
+              options: [
+                'To calculate memory size of a variable or data type',
+                'To resize arrays',
+                'To measure string length',
+                'To compare sizes of variables'
+              ],
+              correctAnswer: 'To calculate memory size of a variable or data type'
+            },
+            {
+              question: 'What is a pointer in C?',
+              options: [
+                'A variable that stores a memory address',
+                'A special type of array',
+                'A function pointer',
+                'A data structure'
+              ],
+              correctAnswer: 'A variable that stores a memory address'
+            },
+            {
+              question: 'What is the difference between malloc() and calloc()?',
+              options: [
+                'malloc() allocates single block, calloc() allocates multiple blocks',
+                'malloc() is faster than calloc()',
+                'calloc() initializes memory to zero, malloc() does not',
+                'There is no difference'
+              ],
+              correctAnswer: 'calloc() initializes memory to zero, malloc() does not'
+            },
+            {
+              question: 'What is the purpose of the static keyword in C?',
+              options: [
+                'To make variables constant',
+                'To preserve variable value between function calls',
+                'To allocate memory dynamically',
+                'To declare global variables'
+              ],
+              correctAnswer: 'To preserve variable value between function calls'
+            },
+            {
+              question: 'What is a structure in C?',
+              options: [
+                'A user-defined data type that groups related variables',
+                'A type of array',
+                'A function template',
+                'A control structure'
+              ],
+              correctAnswer: 'A user-defined data type that groups related variables'
+            },
+            {
+              question: 'What is the purpose of the volatile keyword?',
+              options: [
+                'To optimize code',
+                'To declare constants',
+                'To tell compiler not to optimize the variable',
+                'To declare global variables'
+              ],
+              correctAnswer: 'To tell compiler not to optimize the variable'
+            },
+            {
+              question: 'What is the difference between ++i and i++?',
+              options: [
+                'No difference',
+                '++i increments before use, i++ increments after use',
+                'i++ is faster than ++i',
+                '++i is not valid syntax'
+              ],
+              correctAnswer: '++i increments before use, i++ increments after use'
+            },
+            {
+              question: 'What is a union in C?',
+              options: [
+                'A data type that stores different data types in same memory location',
+                'A type of array',
+                'A function that combines multiple values',
+                'A special pointer'
+              ],
+              correctAnswer: 'A data type that stores different data types in same memory location'
+            },
+            {
+              question: 'What is the purpose of the const keyword?',
+              options: [
+                'To declare constants',
+                'To optimize code',
+                'To declare static variables',
+                'To allocate memory'
+              ],
+              correctAnswer: 'To declare constants'
+            },
+            {
+              question: 'What is a dangling pointer?',
+              options: [
+                'A pointer that points to deallocated memory',
+                'A null pointer',
+                'A void pointer',
+                'A function pointer'
+              ],
+              correctAnswer: 'A pointer that points to deallocated memory'
+            }
+          ]
+        }
+      ]
+    },
+    cpp: {
+      name: 'C++',
+      icon: '⚡',
+      quizzes: [
+        {
+          title: 'C++ Fundamentals',
+          questions: [
+            {
+              question: 'What is the difference between C and C++?',
+              options: [
+                'C++ supports object-oriented programming',
+                'C is faster than C++',
+                'C++ is older than C',
+                'There is no difference'
+              ],
+              correctAnswer: 'C++ supports object-oriented programming'
+            },
+            {
+              question: 'What is polymorphism in C++?',
+              options: [
+                'Ability of objects to take multiple forms',
+                'A type of variable',
+                'A memory management technique',
+                'A compilation error'
+              ],
+              correctAnswer: 'Ability of objects to take multiple forms'
+            },
+            {
+              question: 'What is the purpose of virtual functions?',
+              options: [
+                'To support runtime polymorphism',
+                'To make functions faster',
+                'To declare static functions',
+                'To optimize code'
+              ],
+              correctAnswer: 'To support runtime polymorphism'
+            },
+            {
+              question: 'What is an abstract class?',
+              options: [
+                'A class with at least one pure virtual function',
+                'A class that cannot be instantiated',
+                'A template class',
+                'A static class'
+              ],
+              correctAnswer: 'A class with at least one pure virtual function'
+            },
+            {
+              question: 'What is the purpose of friend function?',
+              options: [
+                'To access private members of a class',
+                'To make functions faster',
+                'To declare static functions',
+                'To create friend classes'
+              ],
+              correctAnswer: 'To access private members of a class'
+            },
+            {
+              question: 'What is operator overloading?',
+              options: [
+                'Giving additional meaning to operators',
+                'Creating new operators',
+                'Removing operators',
+                'Optimizing operators'
+              ],
+              correctAnswer: 'Giving additional meaning to operators'
+            },
+            {
+              question: 'What is a template in C++?',
+              options: [
+                'A blueprint for generic classes or functions',
+                'A type of class',
+                'A special function',
+                'A memory management tool'
+              ],
+              correctAnswer: 'A blueprint for generic classes or functions'
+            },
+            {
+              question: 'What is the purpose of namespace?',
+              options: [
+                'To avoid name conflicts',
+                'To optimize code',
+                'To declare global variables',
+                'To create templates'
+              ],
+              correctAnswer: 'To avoid name conflicts'
+            },
+            {
+              question: 'What is RAII in C++?',
+              options: [
+                'Resource Acquisition Is Initialization',
+                'Random Access Iterator Implementation',
+                'Runtime Array Index Initialization',
+                'Recursive Array Index Iteration'
+              ],
+              correctAnswer: 'Resource Acquisition Is Initialization'
+            },
+            {
+              question: 'What is the difference between new and malloc?',
+              options: [
+                'new calls constructor, malloc does not',
+                'malloc is faster than new',
+                'new is C-style, malloc is C++-style',
+                'There is no difference'
+              ],
+              correctAnswer: 'new calls constructor, malloc does not'
+            }
+          ]
+        }
+      ]
+    },
+    java: {
+      name: 'Java',
+      icon: '☕',
+      quizzes: [
+        {
+          title: 'Java Fundamentals',
+          questions: [
+            {
+              question: 'What is the difference between JDK and JRE?',
+              options: [
+                'JDK includes development tools, JRE is runtime only',
+                'JRE is faster than JDK',
+                'JDK is for desktop, JRE is for web',
+                'There is no difference'
+              ],
+              correctAnswer: 'JDK includes development tools, JRE is runtime only'
+            },
+            {
+              question: 'What is the difference between == and .equals()?',
+              options: [
+                '== compares references, .equals() compares content',
+                '.equals() is faster than ==',
+                'They are the same',
+                '== is more accurate'
+              ],
+              correctAnswer: '== compares references, .equals() compares content'
+            },
+            {
+              question: 'What is the purpose of the final keyword?',
+              options: [
+                'To make variables, methods, or classes unchangeable',
+                'To optimize code',
+                'To declare static variables',
+                'To create interfaces'
+              ],
+              correctAnswer: 'To make variables, methods, or classes unchangeable'
+            },
+            {
+              question: 'What is the difference between ArrayList and LinkedList?',
+              options: [
+                'ArrayList uses array, LinkedList uses doubly linked list',
+                'ArrayList is faster for all operations',
+                'LinkedList uses less memory',
+                'There is no difference'
+              ],
+              correctAnswer: 'ArrayList uses array, LinkedList uses doubly linked list'
+            },
+            {
+              question: 'What is the purpose of the synchronized keyword?',
+              options: [
+                'To prevent thread interference',
+                'To make code faster',
+                'To optimize memory usage',
+                'To declare static methods'
+              ],
+              correctAnswer: 'To prevent thread interference'
+            },
+            {
+              question: 'What is the difference between abstract class and interface?',
+              options: [
+                'Abstract class can have implementation, interface cannot',
+                'Interface is faster',
+                'Abstract class uses less memory',
+                'There is no difference'
+              ],
+              correctAnswer: 'Abstract class can have implementation, interface cannot'
+            },
+            {
+              question: 'What is garbage collection in Java?',
+              options: [
+                'Automatic memory management',
+                'Manual memory cleanup',
+                'A type of error handling',
+                'A design pattern'
+              ],
+              correctAnswer: 'Automatic memory management'
+            },
+            {
+              question: 'What is the purpose of the static keyword?',
+              options: [
+                'To declare class-level members',
+                'To optimize code',
+                'To create interfaces',
+                'To handle exceptions'
+              ],
+              correctAnswer: 'To declare class-level members'
+            },
+            {
+              question: 'What is method overloading?',
+              options: [
+                'Multiple methods with same name but different parameters',
+                'Changing method behavior in subclass',
+                'Creating static methods',
+                'Optimizing methods'
+              ],
+              correctAnswer: 'Multiple methods with same name but different parameters'
+            },
+            {
+              question: 'What is the purpose of the super keyword?',
+              options: [
+                'To refer to parent class members',
+                'To optimize code',
+                'To create interfaces',
+                'To handle exceptions'
+              ],
+              correctAnswer: 'To refer to parent class members'
+            }
+          ]
+        }
+      ]
+    }
+  };
