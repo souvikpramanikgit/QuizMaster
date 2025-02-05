@@ -6,6 +6,7 @@ import './App.css';
 import { QUIZ_DATA } from './quizData';
 import { ModeToggle } from './components/mode-toggle';
 import { ThemeProvider } from './components/theme-provider';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState(null);
@@ -55,7 +56,7 @@ function App() {
         <div className="fixed top-4 right-4 z-50">
           <ModeToggle />
         </div>
-
+        <Analytics />
         {!selectedTopic ? (
           <>
             <div className="text-center mb-12 p-8 bg-card rounded-2xl shadow-lg">
