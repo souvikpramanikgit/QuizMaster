@@ -36,21 +36,21 @@ cd quiz-master
 
 2. Install dependencies:
 
-bash
+```bash
 npm install
-
+```
 
 3. Start the development server:
 
-bash
+```bash
 npm run dev
-
+```
 
 4. Open your browser and visit `http://localhost:5173`
 
 ## Project Structure
 
-project4/
+```
 ├── src/
 │ ├── components/ # React components
 │ ├── lib/ # Utility functions
@@ -59,6 +59,7 @@ project4/
 │ └── quizData.js # Quiz questions and answers
 ├── public/ # Public assets
 └── ...config files
+```
 
 
 ## Available Scripts
