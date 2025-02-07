@@ -16,7 +16,6 @@ export const QUIZ_DATA = {
               options: ['var', 'let', 'const', 'All of the above'],
               correctAnswer: 'All of the above'
             },
-            // Add 8 more questions here...
             {
               question: 'What is the typeof operator result for null?',
               options: ['null', 'undefined', 'object', 'number'],
@@ -381,6 +380,216 @@ export const QUIZ_DATA = {
                 'To improve memory usage'
               ],
               correctAnswer: 'To create references to DOM elements'
+            }
+          ]
+        },
+        {
+          title: 'React Intermediate',
+          questions: [
+            {
+              question: 'What is the purpose of React.memo()?',
+              options: [
+                'To memoize component rendering',
+                'To create memory leaks',
+                'To store global state',
+                'To handle routing'
+              ],
+              correctAnswer: 'To memoize component rendering'
+            },
+            {
+              question: 'What is the Context API used for?',
+              options: [
+                'To avoid prop drilling',
+                'To create new components',
+                'To handle HTTP requests',
+                'To style components'
+              ],
+              correctAnswer: 'To avoid prop drilling'
+            },
+            {
+              question: 'What is the purpose of useCallback hook?',
+              options: [
+                'To memoize functions',
+                'To create state',
+                'To handle side effects',
+                'To manage refs'
+              ],
+              correctAnswer: 'To memoize functions'
+            },
+            {
+              question: 'What is the difference between useMemo and useCallback?',
+              options: [
+                'useMemo memoizes values, useCallback memoizes functions',
+                'useCallback memoizes values, useMemo memoizes functions',
+                'They are the same',
+                'useMemo is deprecated'
+              ],
+              correctAnswer: 'useMemo memoizes values, useCallback memoizes functions'
+            },
+            {
+              question: 'What is React Suspense?',
+              options: [
+                'A way to handle loading states',
+                'A state management tool',
+                'A routing solution',
+                'A testing framework'
+              ],
+              correctAnswer: 'A way to handle loading states'
+            },
+            {
+              question: 'What is the purpose of useReducer?',
+              options: [
+                'To manage complex state logic',
+                'To reduce bundle size',
+                'To optimize performance',
+                'To handle routing'
+              ],
+              correctAnswer: 'To manage complex state logic'
+            },
+            {
+              question: 'What are React portals?',
+              options: [
+                'A way to render children outside parent DOM hierarchy',
+                'A way to create new components',
+                'A state management solution',
+                'A routing mechanism'
+              ],
+              correctAnswer: 'A way to render children outside parent DOM hierarchy'
+            },
+            {
+              question: 'What is the purpose of useLayoutEffect?',
+              options: [
+                'To perform synchronous updates after DOM mutations',
+                'To handle asynchronous operations',
+                'To manage state',
+                'To create refs'
+              ],
+              correctAnswer: 'To perform synchronous updates after DOM mutations'
+            },
+            {
+              question: 'What is React.StrictMode?',
+              options: [
+                'A development tool for highlighting potential problems',
+                'A production optimization tool',
+                'A type checking system',
+                'A routing solution'
+              ],
+              correctAnswer: 'A development tool for highlighting potential problems'
+            },
+            {
+              question: 'What is the purpose of key prop in lists?',
+              options: [
+                'To help React track list items efficiently',
+                'To style list items',
+                'To add event listeners',
+                'To create refs'
+              ],
+              correctAnswer: 'To help React track list items efficiently'
+            }
+          ]
+        },
+        {
+          title: 'React Advanced',
+          questions: [
+            {
+              question: 'What is React Fiber?',
+              options: [
+                'React\'s new reconciliation algorithm',
+                'A state management library',
+                'A routing solution',
+                'A testing framework'
+              ],
+              correctAnswer: 'React\'s new reconciliation algorithm'
+            },
+            {
+              question: 'What is the purpose of ErrorBoundary in React?',
+              options: [
+                'To catch and handle errors in component tree',
+                'To validate form inputs',
+                'To handle HTTP errors',
+                'To debug code'
+              ],
+              correctAnswer: 'To catch and handle errors in component tree'
+            },
+            {
+              question: 'What is React Server Components?',
+              options: [
+                'Components that render on the server',
+                'Components that use servers',
+                'Backend components',
+                'Database components'
+              ],
+              correctAnswer: 'Components that render on the server'
+            },
+            {
+              question: 'What is the purpose of React.lazy()?',
+              options: [
+                'To enable code splitting',
+                'To make components load slowly',
+                'To reduce performance',
+                'To handle errors'
+              ],
+              correctAnswer: 'To enable code splitting'
+            },
+            {
+              question: 'What is the Concurrent Mode in React?',
+              options: [
+                'A set of features for better user experience',
+                'A way to run multiple React versions',
+                'A testing mode',
+                'A development tool'
+              ],
+              correctAnswer: 'A set of features for better user experience'
+            },
+            {
+              question: 'What is React Profiler?',
+              options: [
+                'A tool to measure rendering performance',
+                'A user profile manager',
+                'A routing solution',
+                'A state manager'
+              ],
+              correctAnswer: 'A tool to measure rendering performance'
+            },
+            {
+              question: 'What is the purpose of shouldComponentUpdate?',
+              options: [
+                'To optimize performance by preventing unnecessary renders',
+                'To force component updates',
+                'To handle errors',
+                'To manage state'
+              ],
+              correctAnswer: 'To optimize performance by preventing unnecessary renders'
+            },
+            {
+              question: 'What are React Hooks Rules?',
+              options: [
+                'Only call hooks at the top level and from React functions',
+                'Hooks can be called anywhere',
+                'Hooks must be async',
+                'Hooks must return JSX'
+              ],
+              correctAnswer: 'Only call hooks at the top level and from React functions'
+            },
+            {
+              question: 'What is the purpose of useImperativeHandle?',
+              options: [
+                'To customize the instance value exposed to parent components',
+                'To handle form inputs',
+                'To manage state',
+                'To create refs'
+              ],
+              correctAnswer: 'To customize the instance value exposed to parent components'
+            },
+            {
+              question: 'What is React Reconciliation?',
+              options: [
+                'The process of updating the DOM',
+                'A state management solution',
+                'A routing mechanism',
+                'A testing framework'
+              ],
+              correctAnswer: 'The process of updating the DOM'
             }
           ]
         }
