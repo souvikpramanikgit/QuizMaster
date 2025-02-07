@@ -1,4 +1,10 @@
 /* Add these theme variables at the top */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --background: #ffffff;
   --text-primary: #213547;
@@ -20,6 +26,7 @@
 }
 
 /* Update existing styles to use variables */
+
 .App {
   background-color: var(--background);
   color: var(--text-primary);
@@ -78,7 +85,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -131,6 +138,12 @@
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 2rem;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .topics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
 }
 
 .topic-button {
@@ -305,4 +318,44 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.history-card {
+  transition: transform 0.2s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-2px);
+}
+
+.quiz-history-empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-primary);
+  background: var(--card-background);
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.history-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.history-item .remove-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.history-item:hover .remove-button {
+  opacity: 1;
+}
+
+.history-item.removing {
+  transform: translateX(100%);
+  opacity: 0;
 }
