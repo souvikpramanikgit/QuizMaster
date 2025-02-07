@@ -597,10 +597,21 @@ export const QUIZ_DATA = {
     },
     python: {
       name: 'Python',
+      icon: '🐍',
       quizzes: [
         {
-          title: 'Python Basics',
+          title: 'Python Fundamentals',
           questions: [
+            {
+              question: 'What is Python?',
+              options: [
+                'An interpreted high-level programming language',
+                'A compiled language',
+                'A markup language',
+                'A database language'
+              ],
+              correctAnswer: 'An interpreted high-level programming language'
+            },
             {
               question: 'What is the correct file extension for Python files?',
               options: ['.py', '.pt', '.pyt', '.python'],
@@ -690,6 +701,36 @@ export const QUIZ_DATA = {
                 'They are the same'
               ],
               correctAnswer: '== compares values, is compares identity'
+            }
+          ]
+        },
+        {
+          title: 'Python Intermediate',
+          questions: [
+            {
+              question: 'What is a decorator in Python?',
+              options: [
+                'A function that modifies another function',
+                'A class attribute',
+                'A type of loop',
+                'A variable declaration'
+              ],
+              correctAnswer: 'A function that modifies another function'
+            }
+          ]
+        },
+        {
+          title: 'Python Advanced',
+          questions: [
+            {
+              question: 'What is a metaclass in Python?',
+              options: [
+                'A class that defines behavior of other classes',
+                'A type of variable',
+                'A function decorator',
+                'A data structure'
+              ],
+              correctAnswer: 'A class that defines behavior of other classes'
             }
           ]
         }
@@ -803,25 +844,65 @@ export const QUIZ_DATA = {
               correctAnswer: 'A pointer that points to deallocated memory'
             }
           ]
+        },
+        {
+          title: 'C Intermediate',
+          questions: [
+            {
+              question: 'What is the difference between malloc() and calloc()?',
+              options: [
+                'calloc initializes memory to zero, malloc does not',
+                'malloc is faster than calloc',
+                'calloc can only allocate arrays',
+                'There is no difference'
+              ],
+              correctAnswer: 'calloc initializes memory to zero, malloc does not'
+            },
+            {
+              question: 'What is a function pointer?',
+              options: [
+                'A pointer that points to a function',
+                'A pointer to void',
+                'A null pointer',
+                'A pointer to an array'
+              ],
+              correctAnswer: 'A pointer that points to a function'
+            }
+          ]
+        },
+        {
+          title: 'C Advanced',
+          questions: [
+            {
+              question: 'What is volatile keyword used for?',
+              options: [
+                'To prevent compiler optimization on variable',
+                'To make variable constant',
+                'To create thread-safe code',
+                'To optimize performance'
+              ],
+              correctAnswer: 'To prevent compiler optimization on variable'
+            }
+          ]
         }
       ]
     },
     cpp: {
       name: 'C++',
-      icon: '⚡',
+      icon: '⚙️',
       quizzes: [
         {
           title: 'C++ Fundamentals',
           questions: [
             {
-              question: 'What is the difference between C and C++?',
+              question: 'What is a class in C++?',
               options: [
-                'C++ supports object-oriented programming',
-                'C is faster than C++',
-                'C++ is older than C',
-                'There is no difference'
+                'A user-defined data type',
+                'A built-in data type',
+                'A function',
+                'A pointer'
               ],
-              correctAnswer: 'C++ supports object-oriented programming'
+              correctAnswer: 'A user-defined data type'
             },
             {
               question: 'What is polymorphism in C++?',
@@ -912,6 +993,36 @@ export const QUIZ_DATA = {
                 'There is no difference'
               ],
               correctAnswer: 'new calls constructor, malloc does not'
+            }
+          ]
+        },
+        {
+          title: 'C++ Intermediate',
+          questions: [
+            {
+              question: 'What is polymorphism in C++?',
+              options: [
+                'Ability of an object to take multiple forms',
+                'A type of variable',
+                'A memory management technique',
+                'A compilation process'
+              ],
+              correctAnswer: 'Ability of an object to take multiple forms'
+            }
+          ]
+        },
+        {
+          title: 'C++ Advanced',
+          questions: [
+            {
+              question: 'What is RAII in C++?',
+              options: [
+                'Resource Acquisition Is Initialization',
+                'Random Access Iterator Implementation',
+                'Runtime Array Index Initialization',
+                'Recursive Array Index Iteration'
+              ],
+              correctAnswer: 'Resource Acquisition Is Initialization'
             }
           ]
         }
@@ -1023,6 +1134,493 @@ export const QUIZ_DATA = {
                 'To handle exceptions'
               ],
               correctAnswer: 'To refer to parent class members'
+            }
+          ]
+        },
+        {
+          title: 'Java Intermediate',
+          questions: [
+            {
+              question: 'What is the difference between ArrayList and LinkedList?',
+              options: [
+                'ArrayList uses array, LinkedList uses doubly linked list',
+                'ArrayList is faster for all operations',
+                'LinkedList uses less memory',
+                'There is no difference'
+              ],
+              correctAnswer: 'ArrayList uses array, LinkedList uses doubly linked list'
+            },
+            {
+              question: 'What is the purpose of the volatile keyword?',
+              options: [
+                'To ensure thread-safe access to variables',
+                'To make variables constant',
+                'To improve performance',
+                'To declare global variables'
+              ],
+              correctAnswer: 'To ensure thread-safe access to variables'
+            },
+            {
+              question: 'What is the Singleton pattern?',
+              options: [
+                'A design pattern that ensures a class has only one instance',
+                'A pattern for creating multiple objects',
+                'A threading pattern',
+                'A database pattern'
+              ],
+              correctAnswer: 'A design pattern that ensures a class has only one instance'
+            },
+            {
+              question: 'What is the purpose of the transient keyword?',
+              options: [
+                'To exclude field from serialization',
+                'To make field thread-safe',
+                'To optimize performance',
+                'To declare constants'
+              ],
+              correctAnswer: 'To exclude field from serialization'
+            },
+            {
+              question: 'What is the difference between Comparable and Comparator?',
+              options: [
+                'Comparable provides natural ordering, Comparator provides custom ordering',
+                'Comparator is faster than Comparable',
+                'Comparable is newer than Comparator',
+                'They are the same'
+              ],
+              correctAnswer: 'Comparable provides natural ordering, Comparator provides custom ordering'
+            }
+          ]
+        },
+        {
+          title: 'Java Advanced',
+          questions: [
+            {
+              question: 'What is the Java Memory Model?',
+              options: [
+                'A specification that defines how threads interact through memory',
+                'A type of garbage collector',
+                'A memory management tool',
+                'A performance optimization'
+              ],
+              correctAnswer: 'A specification that defines how threads interact through memory'
+            },
+            {
+              question: 'What is bytecode instrumentation?',
+              options: [
+                'Modifying Java bytecode at runtime',
+                'Compiling Java code',
+                'Debugging Java applications',
+                'Optimizing code execution'
+              ],
+              correctAnswer: 'Modifying Java bytecode at runtime'
+            },
+            {
+              question: 'What is the purpose of the Java Agent?',
+              options: [
+                'To modify classes at runtime',
+                'To manage database connections',
+                'To handle HTTP requests',
+                'To optimize code'
+              ],
+              correctAnswer: 'To modify classes at runtime'
+            },
+            {
+              question: 'What is the Fork/Join framework?',
+              options: [
+                'A framework for parallel programming',
+                'A web framework',
+                'A database framework',
+                'A testing framework'
+              ],
+              correctAnswer: 'A framework for parallel programming'
+            },
+            {
+              question: 'What is the purpose of the sun.misc.Unsafe class?',
+              options: [
+                'To perform low-level, unsafe operations',
+                'To handle exceptions',
+                'To manage threads',
+                'To optimize code'
+              ],
+              correctAnswer: 'To perform low-level, unsafe operations'
+            }
+          ]
+        }
+      ]
+    },
+    html: {
+      name: 'HTML',
+      icon: '🌐',
+      quizzes: [
+        {
+          title: 'HTML Fundamentals',
+          questions: [
+            {
+              question: 'What does HTML stand for?',
+              options: [
+                'Hyper Text Markup Language',
+                'High Tech Modern Language',
+                'Hyper Transfer Markup Language',
+                'Hyper Text Modern Links'
+              ],
+              correctAnswer: 'Hyper Text Markup Language'
+            },
+            {
+              question: 'Which tag is used to create a hyperlink?',
+              options: ['<link>', '<a>', '<href>', '<url>'],
+              correctAnswer: '<a>'
+            },
+            // Add 8 more fundamental questions
+          ]
+        },
+        {
+          title: 'HTML Intermediate',
+          questions: [
+            {
+              question: 'What is the purpose of the <canvas> element?',
+              options: [
+                'To draw graphics via JavaScript',
+                'To display images',
+                'To create forms',
+                'To style content'
+              ],
+              correctAnswer: 'To draw graphics via JavaScript'
+            },
+            // Add 9 more intermediate questions
+          ]
+        },
+        {
+          title: 'HTML Advanced',
+          questions: [
+            {
+              question: 'What is the role of the srcset attribute in responsive images?',
+              options: [
+                'Provides multiple image sources for different viewport sizes',
+                'Sets the source of an image',
+                'Defines image style',
+                'Controls image loading'
+              ],
+              correctAnswer: 'Provides multiple image sources for different viewport sizes'
+            },
+            // Add 9 more advanced questions
+          ]
+        }
+      ]
+    },
+    css: {
+      name: 'CSS',
+      icon: '🎨',
+      quizzes: [
+        {
+          title: 'CSS Fundamentals',
+          questions: [
+            {
+              question: 'What does CSS stand for?',
+              options: [
+                'Cascading Style Sheets',
+                'Computer Style Sheets',
+                'Creative Style System',
+                'Colorful Style Sheets'
+              ],
+              correctAnswer: 'Cascading Style Sheets'
+            },
+            // Add more questions
+          ]
+        },
+        {
+          title: 'CSS Intermediate',
+          questions: [
+            {
+              question: 'What is the difference between Flexbox and Grid?',
+              options: [
+                'Flexbox is 1D, Grid is 2D',
+                'Flexbox is newer than Grid',
+                'Grid is only for small layouts',
+                'They are the same'
+              ],
+              correctAnswer: 'Flexbox is 1D, Grid is 2D'
+            },
+            // Add more questions
+          ]
+        },
+        {
+          title: 'CSS Advanced',
+          questions: [
+            {
+              question: 'What is CSS containment?',
+              options: [
+                'A way to improve rendering performance',
+                'A method to contain floats',
+                'A type of CSS selector',
+                'A layout model'
+              ],
+              correctAnswer: 'A way to improve rendering performance'
+            },
+            // Add more questions
+          ]
+        }
+      ]
+    },
+    nodejs: {
+      name: 'Node.js',
+      icon: '⚡',
+      quizzes: [
+        {
+          title: 'Node.js Fundamentals',
+          questions: [
+            {
+              question: 'What is Node.js?',
+              options: [
+                'A JavaScript runtime built on Chrome\'s V8 engine',
+                'A programming language',
+                'A web browser',
+                'A database'
+              ],
+              correctAnswer: 'A JavaScript runtime built on Chrome\'s V8 engine'
+            },
+            // Add more questions
+          ]
+        },
+        {
+          title: 'Node.js Intermediate',
+          questions: [
+            {
+              question: 'What is the Event Loop in Node.js?',
+              options: [
+                'A mechanism to handle asynchronous operations',
+                'A type of database',
+                'A security feature',
+                'A routing system'
+              ],
+              correctAnswer: 'A mechanism to handle asynchronous operations'
+            },
+            {
+              question: 'What is the purpose of the Buffer class in Node.js?',
+              options: [
+                'To handle binary data',
+                'To store cache',
+                'To manage memory',
+                'To compress files'
+              ],
+              correctAnswer: 'To handle binary data'
+            },
+            // Add 8 more intermediate questions
+          ]
+        },
+        {
+          title: 'Node.js Advanced',
+          questions: [
+            {
+              question: 'What is clustering in Node.js?',
+              options: [
+                'A technique to run multiple instances of Node.js',
+                'A database feature',
+                'A security measure',
+                'A type of error handling'
+              ],
+              correctAnswer: 'A technique to run multiple instances of Node.js'
+            },
+            // Add 9 more advanced questions
+          ]
+        }
+      ]
+    },
+    sql: {
+      name: 'SQL',
+      icon: '📊',
+      quizzes: [
+        {
+          title: 'SQL Fundamentals',
+          questions: [
+            {
+              question: 'What does SQL stand for?',
+              options: [
+                'Structured Query Language',
+                'Simple Query Language',
+                'Standard Query Language',
+                'System Query Language'
+              ],
+              correctAnswer: 'Structured Query Language'
+            },
+            // Add more questions
+          ]
+        },
+        {
+          title: 'SQL Intermediate',
+          questions: [
+            {
+              question: 'What is a stored procedure?',
+              options: [
+                'A precompiled SQL statement',
+                'A table structure',
+                'A type of key',
+                'A data type'
+              ],
+              correctAnswer: 'A precompiled SQL statement'
+            },
+            {
+              question: 'What is the difference between UNION and UNION ALL?',
+              options: [
+                'UNION removes duplicates, UNION ALL keeps them',
+                'UNION ALL is faster',
+                'UNION works with different tables',
+                'There is no difference'
+              ],
+              correctAnswer: 'UNION removes duplicates, UNION ALL keeps them'
+            },
+            // Add 8 more intermediate questions
+          ]
+        },
+        {
+          title: 'SQL Advanced',
+          questions: [
+            {
+              question: 'What is a deadlock in SQL?',
+              options: [
+                'When two transactions block each other',
+                'When a query never ends',
+                'When data is corrupted',
+                'When server crashes'
+              ],
+              correctAnswer: 'When two transactions block each other'
+            },
+            // Add 9 more advanced questions
+          ]
+        }
+      ]
+    },
+    mongodb: {
+      name: 'MongoDB',
+      icon: '🍃',
+      quizzes: [
+        {
+          title: 'MongoDB Fundamentals',
+          questions: [
+            {
+              question: 'What type of database is MongoDB?',
+              options: [
+                'NoSQL Document Database',
+                'Relational Database',
+                'Graph Database',
+                'Key-Value Store'
+              ],
+              correctAnswer: 'NoSQL Document Database'
+            },
+            // Add more questions
+          ]
+        },
+        {
+          title: 'MongoDB Intermediate',
+          questions: [
+            {
+              question: 'What is an aggregation pipeline?',
+              options: [
+                'A framework for data aggregation',
+                'A type of index',
+                'A backup system',
+                'A replication method'
+              ],
+              correctAnswer: 'A framework for data aggregation'
+            },
+            {
+              question: 'What is sharding in MongoDB?',
+              options: [
+                'Distributing data across multiple machines',
+                'Deleting old data',
+                'Compressing data',
+                'Indexing data'
+              ],
+              correctAnswer: 'Distributing data across multiple machines'
+            },
+            // Add 8 more intermediate questions
+          ]
+        },
+        {
+          title: 'MongoDB Advanced',
+          questions: [
+            {
+              question: 'What is the purpose of the $lookup operator?',
+              options: [
+                'To perform left outer joins',
+                'To search text',
+                'To create indexes',
+                'To update documents'
+              ],
+              correctAnswer: 'To perform left outer joins'
+            },
+            // Add 9 more advanced questions
+          ]
+        }
+      ]
+    },
+    express: {
+      name: 'Express.js',
+      icon: '🚂',
+      quizzes: [
+        {
+          title: 'Express.js Fundamentals',
+          questions: [
+            {
+              question: 'What is Express.js?',
+              options: [
+                'A web application framework for Node.js',
+                'A database system',
+                'A frontend framework',
+                'A programming language'
+              ],
+              correctAnswer: 'A web application framework for Node.js'
+            },
+            // Add more questions
+          ]
+        },
+        {
+          title: 'Express.js Intermediate',
+          questions: [
+            {
+              question: 'What is middleware in Express.js?',
+              options: [
+                'Functions that have access to request and response objects',
+                'A database system',
+                'A routing mechanism',
+                'A template engine'
+              ],
+              correctAnswer: 'Functions that have access to request and response objects'
+            },
+            {
+              question: 'What is the purpose of next() in Express middleware?',
+              options: [
+                'To pass control to the next middleware function',
+                'To end the request',
+                'To send a response',
+                'To handle errors'
+              ],
+              correctAnswer: 'To pass control to the next middleware function'
+            }
+          ]
+        },
+        {
+          title: 'Express.js Advanced',
+          questions: [
+            {
+              question: 'What is Express.js rate limiting?',
+              options: [
+                'A technique to limit repeated requests',
+                'A way to optimize routes',
+                'A database connection limit',
+                'A memory management technique'
+              ],
+              correctAnswer: 'A technique to limit repeated requests'
+            },
+            {
+              question: 'What is the purpose of Express.js security middleware?',
+              options: [
+                'To protect against common web vulnerabilities',
+                'To encrypt data',
+                'To compress responses',
+                'To cache requests'
+              ],
+              correctAnswer: 'To protect against common web vulnerabilities'
             }
           ]
         }
