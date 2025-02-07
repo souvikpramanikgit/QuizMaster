@@ -5,7 +5,6 @@ import QuizResults from './components/QuizResults';
 import History from './components/History';
 import './App.css';
 import { QUIZ_DATA } from './quizData';
-import { ModeToggle } from './components/mode-toggle';
 import { ThemeProvider } from './components/theme-provider';
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
